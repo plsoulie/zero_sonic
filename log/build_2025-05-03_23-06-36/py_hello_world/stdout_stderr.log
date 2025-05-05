@@ -1,0 +1,38 @@
+/home/francesco/.local/lib/python3.8/site-packages/setuptools/dist.py:495: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'script-dir' will not be supported in future
+        versions. Please use the underscore name 'script_dir' instead.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+/home/francesco/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+creating py_hello_world.egg-info
+writing py_hello_world.egg-info/PKG-INFO
+writing dependency_links to py_hello_world.egg-info/dependency_links.txt
+writing entry points to py_hello_world.egg-info/entry_points.txt
+writing requirements to py_hello_world.egg-info/requires.txt
+writing top-level names to py_hello_world.egg-info/top_level.txt
+writing manifest file 'py_hello_world.egg-info/SOURCES.txt'
+reading manifest file 'py_hello_world.egg-info/SOURCES.txt'
+writing manifest file 'py_hello_world.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/francesco/zero_sonic/install/py_hello_world/lib/python3.8/site-packages/py-hello-world.egg-link (link to .)
+Installing listener script to /home/francesco/zero_sonic/install/py_hello_world/lib/py_hello_world
+Installing talker script to /home/francesco/zero_sonic/install/py_hello_world/lib/py_hello_world
+
+Installed /home/francesco/zero_sonic/build/py_hello_world
+running symlink_data
+creating /home/francesco/zero_sonic/install/py_hello_world/share/ament_index/resource_index/packages
+symbolically linking /home/francesco/zero_sonic/build/py_hello_world/resource/py_hello_world -> /home/francesco/zero_sonic/install/py_hello_world/share/ament_index/resource_index/packages
+symbolically linking /home/francesco/zero_sonic/build/py_hello_world/package.xml -> /home/francesco/zero_sonic/install/py_hello_world/share/py_hello_world

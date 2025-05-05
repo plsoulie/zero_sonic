@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+py_hello_world/__init__.py
+py_hello_world/listener.py
+py_hello_world/talker.py
+py_hello_world.egg-info/PKG-INFO
+py_hello_world.egg-info/SOURCES.txt
+py_hello_world.egg-info/dependency_links.txt
+py_hello_world.egg-info/entry_points.txt
+py_hello_world.egg-info/requires.txt
+py_hello_world.egg-info/top_level.txt
+py_hello_world.egg-info/zip-safe
+resource/py_hello_world

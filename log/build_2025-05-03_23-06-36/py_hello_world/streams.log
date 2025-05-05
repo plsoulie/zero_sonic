@@ -1,0 +1,40 @@
+[1.899s] Invoking command in '/home/francesco/zero_sonic/build/py_hello_world': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/francesco/zero_sonic/build/py_hello_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/francesco/zero_sonic/install/py_hello_world/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/francesco/zero_sonic/build/py_hello_world/build --no-deps symlink_data
+[2.240s] /home/francesco/.local/lib/python3.8/site-packages/setuptools/dist.py:495: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[2.240s] !!
+[2.241s] 
+[2.241s]         ********************************************************************************
+[2.241s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.241s]         versions. Please use the underscore name 'script_dir' instead.
+[2.241s] 
+[2.241s]         This deprecation is overdue, please update your project and remove deprecated
+[2.241s]         calls to avoid build errors in the future.
+[2.242s] 
+[2.242s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.242s]         ********************************************************************************
+[2.242s] 
+[2.242s] !!
+[2.242s]   opt = self.warn_dash_deprecation(opt, section)
+[2.281s] /home/francesco/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[2.281s]   warnings.warn(msg)
+[2.672s] running develop
+[3.147s] running egg_info
+[3.184s] creating py_hello_world.egg-info
+[3.186s] writing py_hello_world.egg-info/PKG-INFO
+[3.187s] writing dependency_links to py_hello_world.egg-info/dependency_links.txt
+[3.187s] writing entry points to py_hello_world.egg-info/entry_points.txt
+[3.189s] writing requirements to py_hello_world.egg-info/requires.txt
+[3.189s] writing top-level names to py_hello_world.egg-info/top_level.txt
+[3.197s] writing manifest file 'py_hello_world.egg-info/SOURCES.txt'
+[3.275s] reading manifest file 'py_hello_world.egg-info/SOURCES.txt'
+[3.278s] writing manifest file 'py_hello_world.egg-info/SOURCES.txt'
+[3.400s] running build_ext
+[3.401s] Creating /home/francesco/zero_sonic/install/py_hello_world/lib/python3.8/site-packages/py-hello-world.egg-link (link to .)
+[3.403s] Installing listener script to /home/francesco/zero_sonic/install/py_hello_world/lib/py_hello_world
+[3.403s] Installing talker script to /home/francesco/zero_sonic/install/py_hello_world/lib/py_hello_world
+[3.404s] 
+[3.404s] Installed /home/francesco/zero_sonic/build/py_hello_world
+[3.404s] running symlink_data
+[3.412s] creating /home/francesco/zero_sonic/install/py_hello_world/share/ament_index/resource_index/packages
+[3.413s] symbolically linking /home/francesco/zero_sonic/build/py_hello_world/resource/py_hello_world -> /home/francesco/zero_sonic/install/py_hello_world/share/ament_index/resource_index/packages
+[3.413s] symbolically linking /home/francesco/zero_sonic/build/py_hello_world/package.xml -> /home/francesco/zero_sonic/install/py_hello_world/share/py_hello_world
+[3.518s] Invoked command in '/home/francesco/zero_sonic/build/py_hello_world' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/francesco/zero_sonic/build/py_hello_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/francesco/zero_sonic/install/py_hello_world/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/francesco/zero_sonic/build/py_hello_world/build --no-deps symlink_data

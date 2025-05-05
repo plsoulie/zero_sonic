@@ -1,0 +1,3 @@
+[console_scripts]
+listener = py_hello_world.listener:main
+talker = py_hello_world.talker:main

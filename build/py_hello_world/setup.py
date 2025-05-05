@@ -1,0 +1,1 @@
+/home/francesco/zero_sonic/src/py_hello_world/setup.py
