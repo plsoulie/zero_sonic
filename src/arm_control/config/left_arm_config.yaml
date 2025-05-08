@@ -1,0 +1,63 @@
+left_arm_controller:
+  ros__parameters:
+    # Waveshare servo bus parameters
+    servo_bus:
+      port: "/dev/ttyUSB0" # Update with the actual port for the left arm
+      baudrate: 1000000
+      model: "sts3215"
+
+    # Joint configuration
+    joints:
+      - name: "shoulder_pan_joint"
+        id: 1
+        model: "sts3215"
+        min_position: -3.14
+        max_position: 3.14
+        max_velocity: 1.0
+        max_effort: 1.0
+      - name: "shoulder_lift_joint"
+        id: 2
+        model: "sts3215"
+        min_position: -1.57
+        max_position: 1.57
+        max_velocity: 0.8
+        max_effort: 1.0
+      - name: "elbow_flex_joint"
+        id: 3
+        model: "sts3215"
+        min_position: -3.14
+        max_position: 3.14
+        max_velocity: 1.0
+        max_effort: 1.0
+      - name: "wrist_flex_joint"
+        id: 4
+        model: "sts3215"
+        min_position: -1.57
+        max_position: 1.57
+        max_velocity: 1.0
+        max_effort: 1.0
+      - name: "wrist_roll_joint"
+        id: 5
+        model: "sts3215"
+        min_position: -3.14
+        max_position: 3.14
+        max_velocity: 1.0
+        max_effort: 1.0
+      - name: "gripper_joint"
+        id: 6
+        model: "sts3215"
+        min_position: 0.0
+        max_position: 1.0
+        max_velocity: 1.0
+        max_effort: 1.0
+
+    # Update rate for hardware interface
+    update_rate: 50 # Hz
+
+    # Safety parameters
+    command_timeout: 0.5 # seconds
+
+    # Calibration parameters (from LeRobot framework)
+    calibration:
+      enable: true
+      directory: ".cache/calibration/so101"

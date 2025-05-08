@@ -1,0 +1,93 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50 # Hz
+
+    # Controllers for each arm
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+# Left arm joint trajectory controller configuration
+left_arm_controller:
+  ros__parameters:
+    joints:
+      - left_shoulder_pan_joint
+      - left_shoulder_lift_joint
+      - left_elbow_flex_joint
+      - left_wrist_flex_joint
+      - left_wrist_roll_joint
+      - left_gripper_joint
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.01
+      left_shoulder_pan_joint:
+        trajectory: 0.1
+        goal: 0.05
+      left_shoulder_lift_joint:
+        trajectory: 0.1
+        goal: 0.05
+      left_elbow_flex_joint:
+        trajectory: 0.1
+        goal: 0.05
+      left_wrist_flex_joint:
+        trajectory: 0.1
+        goal: 0.05
+      left_wrist_roll_joint:
+        trajectory: 0.1
+        goal: 0.05
+      left_gripper_joint:
+        trajectory: 0.1
+        goal: 0.05
+
+# Right arm joint trajectory controller configuration
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - right_shoulder_pan_joint
+      - right_shoulder_lift_joint
+      - right_elbow_flex_joint
+      - right_wrist_flex_joint
+      - right_wrist_roll_joint
+      - right_gripper_joint
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.01
+      right_shoulder_pan_joint:
+        trajectory: 0.1
+        goal: 0.05
+      right_shoulder_lift_joint:
+        trajectory: 0.1
+        goal: 0.05
+      right_elbow_flex_joint:
+        trajectory: 0.1
+        goal: 0.05
+      right_wrist_flex_joint:
+        trajectory: 0.1
+        goal: 0.05
+      right_wrist_roll_joint:
+        trajectory: 0.1
+        goal: 0.05
+      right_gripper_joint:
+        trajectory: 0.1
+        goal: 0.05

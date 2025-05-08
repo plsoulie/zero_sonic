@@ -1,3 +1,4 @@
 {
-    "ros.distro": "foxy"
+  "ros.distro": "foxy",
+  "cmake.sourceDirectory": "/Users/user/zero_sonic/arm_control"
 }
